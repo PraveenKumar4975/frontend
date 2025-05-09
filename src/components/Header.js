@@ -22,7 +22,7 @@ const Header = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ tokyen: tokenResponse.credential }),
+        body: JSON.stringify({ token: tokenResponse.credential }),
       });
 
       const data = await res.json();
